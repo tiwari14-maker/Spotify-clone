@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player : Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="close">
+          <img class="invert" src="close.svg" alt="">
+        </div>
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img class="invert" src="logo.svg" alt="spotify" />
+          </div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="libraray.svg" alt="playlist" />
+            <h2>Your Library</h2>
+          </div>
+          <div class="songList">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-grey rounded">
+       <div class="header">
+          <div class="nav">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#fffff"
+              fill="none"
+            >
+              <path
+                d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              color="#fffff"
+              fill="none"
+            >
+              <path
+                d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn">Sign up</button>
+            <button class="loginbtn">Log in</button>
+          </div>
+        </div> 
+
+        <div class="spotifyPlaylist">
+          <h1>Popular artits</h1>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/pritam.jpeg"
+                alt="Pritam"
+              />
+              <h2>Pritam</h2>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 
+                        8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4
+                        11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/arjit singh.jpeg"
+                alt="Pritam"
+              />
+              <h2>Arjit</h2>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                         25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/sachin.jpeg"
+                alt="Sachin-Jigar"
+              />
+              <h2>Sachin-Jigar</h2>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                     25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/A R rehman.jpeg"
+                alt="Pritam"
+              />
+              <h2>A.R.Rehman</h2>
+              <p>Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/vishal.jpeg"
+                alt="Pritam"
+              />
+              <h2>Vishal-Shekhar</h2>
+              <p>Artist</p>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div class="albums">
+          <h1>Popular alubms and singles</h1>
+           <div class="albumcontainer">
+            <div class="flashcard">
+              <div class="play1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/glory.jpeg"
+                alt="Pritam"
+              />
+              <h2>Glory</h2>
+              <p>Yo Yo Honey Singh</p>
+            </div>
+  
+            <div class="flashcard">
+              <div class="play1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/Aashiqui.jpeg"
+                alt="Pritam"
+              />
+              <h2>Aashiqui 2</h2>
+              <p>Mithoon, Ankit Tiwari
+                 Jeet Gannguli
+              </p>
+            </div>
+             
+            <div class="flashcard">
+              <div class="play1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/yjhd.jpeg"
+                alt="Pritam"
+              />
+              <h2>Yeh Jawani Hai 
+                  Deewani
+              </h2>
+              <p>Pritam</p>
+            </div>
+   
+            <div class="flashcard">
+              <div class="play1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/who.jpeg"
+                alt="Pritam"
+              />
+              <h2>Who(Remixes)</h2>
+              <p>Jimin
+              </p>
+            </div>
+          
+
+            <div class="flashcard">
+              <div class="play1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path
+                    fill="#1fdf64"
+                    d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                  />
+                  <path
+                    fill="#000000"
+                    d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                             25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                  />
+                </svg>
+              </div>
+              <img
+                src="./images/jo tum mere ho.jpeg"
+                alt="Pritam"
+              />
+              <h2>Jo Tum Mere Ho</h2>
+              <p>Anuv Jain
+              </p>
+            </div>
+
+            </div>   
+           </div>
+      
+
+           <div class="albums">
+            <h1>Popular radio</h1>
+             <div class="albumcontainer">
+              <div class="flashcard">
+                <div class="play1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#1fdf64"
+                      d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                               25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./images/arjit singh radio.jpeg"
+                  alt="Pritam"
+                />
+                <p>With Sachin-Jigar, 
+                   Vishal-Shekhar...
+                </p>
+              </div>
+    
+              <div class="flashcard">
+                <div class="play1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#1fdf64"
+                      d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                               25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./images/shreya.jpeg"
+                  alt="Pritam"
+                />
+                <p>With A.R. Rahman, 
+                  Vishal-Shekhar,At...
+                </p>
+              </div>
+               
+              <div class="flashcard">
+                <div class="play1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#1fdf64"
+                      d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                               25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./images/diljit.jpeg"
+                  alt="Pritam"
+                />
+                <p>With Karan Aujla, 
+                  Shubh,Sidhu...</p>
+              </div>
+     
+              <div class="flashcard">
+                <div class="play1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#1fdf64"
+                      d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                               25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./images/ar.jpeg"
+                  alt="Pritam"
+                />
+                <p>JWith Anirudh Ravichander, 
+                  Harris Jaya... 
+                </p>
+              </div>
+            
+  
+              <div class="flashcard">
+                <div class="play1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      fill="#1fdf64"
+                      d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                    />
+                    <path
+                      fill="#000000"
+                      d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                               25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                    />
+                  </svg>
+                </div>
+                <img
+                  src="./images/kk.jpeg"
+                  alt="Pritam"
+                />
+                <p>With Armaan Malik, 
+                   Mohit Chauhan,...
+                </p>
+              </div>
+  
+              </div>   
+             </div>
+      
+             <div class="albums">
+              <h1>Featured Charts</h1>
+               <div class="albumcontainer">
+                <div class="flashcard">
+                  <div class="play1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#1fdf64"
+                        d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                      <path
+                        fill="#000000"
+                        d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                      />
+                    </svg>
+                  </div>
+                  <img
+                    src="./images/region_global_default.jpg"
+                    alt="Pritam"
+                  />
+                  <p>Your weekly update 
+                     of the most play...</p>
+                </div>
+      
+                <div class="flashcard">
+                  <div class="play1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#1fdf64"
+                        d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                      <path
+                        fill="#000000"
+                        d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                      />
+                    </svg>
+                  </div>
+                  <img
+                    src="./images/top songs india.jpg"
+                    alt="Pritam"
+                  />
+                  <p>Your weekly update 
+                     of the most play...
+                  </p>
+                </div>
+                 
+                <div class="flashcard">
+                  <div class="play1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#1fdf64"
+                        d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                      <path
+                        fill="#000000"
+                        d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                      />
+                    </svg>
+                  </div>
+                  <img
+                    src="./images/top 50 india.jpg"
+                    alt="Pritam"
+                  />
+                  
+                  <p>Your daily update 
+                    of the most played... </p>
+                </div>
+       
+                <div class="flashcard">
+                  <div class="play1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#1fdf64"
+                        d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                      <path
+                        fill="#000000"
+                        d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                      />
+                    </svg>
+                  </div>
+                  <img
+                    src="./images/viral 50 gloabal.jpg"
+                    alt="Pritam"
+                  />
+                  
+                  <p>Your daily update 
+                     of the most viral...
+                  </p>
+                </div>
+              
+    
+                <div class="flashcard">
+                  <div class="play1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path
+                        fill="#1fdf64"
+                        d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+                      />
+                      <path
+                        fill="#000000"
+                        d="M184 152c-8 4-12 12-12 21v166c0 9 4 17 12 21s17 4
+                                 25-1l150-83c8-5 13-13 13-22s-5-17-13-22L209 153c-8-5-17-5-25-1z"
+                      />
+                    </svg>
+                  </div>
+                  <img
+                    src="./images/viral 50 india.jpeg"
+                    alt="Pritam"
+                  />
+                  
+                  <p>Your daily update 
+                     of the most viral...
+                  </p>
+                </div>
+    
+                </div>   
+               </div>
+          
+               <footer>
+                <div class="footer-container">
+                  <div class="footer-section">
+                    <p>Company</p>
+                    <a href="https://www.spotify.com/in-en/about-us/contact/">About</a>
+                    <a href="https://www.lifeatspotify.com/">Jobs</a>
+                    <a href="https://newsroom.spotify.com/">For the Record</a>
+                  </div>
+                  <div class="footer-section">
+                    <p>Communities</p>
+                    <a href="https://artists.spotify.com/">For Artists</a>
+                    <a href="https://developer.spotify.com/">Developers</a>
+                    <a href="https://ads.spotify.com/">Advertising</a>
+                    <a href="https://investors.spotify.com/">Investors</a>
+                    <a href="https://spotifyforvendors.com/">Vendors</a>
+                  </div>
+                  <div class="footer-section">
+                    <p>Useful links</p>
+                    <a href="https://support.spotify.com/">Support</a>
+                    <a href="https://www.spotify.com/in-en/free/">Free Mobile App</a>
+                  </div>
+                  <div class="footer-section">
+                    <p>Spotify Plans</p>
+                    <a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual">Premium Individual</a>
+                    <a href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo">Premium Duo</a>
+                    <a href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family">Premium Family</a>
+                    <a href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student">Premium Student</a>
+                    <a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free">Spotify Free</a>
+                  </div>
+                  <div class="social-icons">
+                    <a href="https://instagram.com/spotify" aria-label="Instagram" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
+                        <path d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M17.5078 6.5L17.4988 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    </a>
+                    <a href="https://twitter.com/spotify" aria-label="Twitter" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
+                        <path d="M2 18.5C3.76504 19.521 5.81428 20 8 20C14.4808 20 19.7617 14.8625 19.9922 8.43797L22 4.5L18.6458 5C17.9407 4.37764 17.0144 4 16 4C13.4276 4 11.5007 6.51734 12.1209 8.98003C8.56784 9.20927 5.34867 7.0213 3.48693 4.10523C2.25147 8.30185 3.39629 13.3561 6.5 16.4705C6.5 17.647 3.5 18.3488 2 18.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    </a>
+                    <a href="https://facebook.com/spotify" aria-label="Facebook" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" color="#ffffff" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    </a>
+                  </div>
+                </div>
+                <div class="footer-bottom">
+                  <p>© 2025 Spotify AB</p>
+                </div>
+              </footer>
+        </div>
+
+      </div>
+
+      <div class="playBar">
+        <div class="seekbar">
+          <div class="circle">
+
+          </div>
+        </div>
+
+
+        <div class="abovebar">
+        <div class="songinfo"></div>
+        
+        
+        <div class="songbuttons">
+          <img id="suffle" class="invert" src="suffle.svg" alt="" />
+          <img id="prevsong" class="invert" src="prevsong.svg" alt="" />
+          <img id="play" class="invert" src="play.svg" alt="" />
+          <img id="nextsong" class="invert" src="nextsong.svg" alt="" />
+          <img id="repeat" class="invert" src="repeat.svg" alt="" />
+        </div>
+
+        <div class="sidebuttons">
+          <img class="invert" src="playingnow.svg" alt="" />
+          <img class="invert" src="lyrics.svg" alt="" />
+          <img class="invert" src="queue.svg" alt="" />
+          <img class="invert" src="connectdevices.svg" alt="" />
+          <img class="invert" src="volume.svg" alt="" />
+          <img class="invert" src="miniplayer.svg" alt="" />
+          <img class="invert" src="fullscreen.svg" alt="" />
+        </div>
+
+        <div class="songtime"></div>
+      </div> 
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
